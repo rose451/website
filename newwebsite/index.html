@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bgr8);
+  font-family: verdana;
+  padding: 10px;
+  background: skyblue ;
+  font-size: 25px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: skyblue;
+ }
+
+.header h1 {
+  font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: peru;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+/* Right column */
+.rightcolumn {
+  float:right;
+  width: 45%;
+  height: =100px;
+  background-color: #f1f1f1;
+  column-span: right
+  opacity:80%;
+}
+
+  /* Left column */
+.leftcolumn {   
+  float: left;
+  width: 85%;
+}
+
+/* Fake image */
+.fakeimg {
+  width: auto 100%;
+  padding: 20px;
+  height: 600px;
+
+}
+
+/* Add a card effect for articles */
+.card {
+  background-image: url("bgr4.jpg");
+  opacity: 60%
+  background-size: cover;
+  margin-top: 20px;
+  text-decoration-color: blue;
+weight:90px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 80px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 60px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    background-color: #ff331122;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Rose k. Mutegi</h1>
+  <h1>Jkuat Gegis Student</h1>
+  <p>Interesting world of coding,geospatial and big data analysis!</p>
+</div>
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="about.html">About me</a>
+  <a href="contacts.html">contacts</a>
+  <a href="enquires.html">enquires</a>
+ 
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h5>GEOSPATIAL WORLD</h5>
+      <h4>Web Mapping Class Practicals </h4>
+      <div class="fakeimg" background color="white" style="height:200px;"><img src="th.jpg"alt="Image"></div>
+      <div class="desc"> project writing and proposal write-up is to contain the following:
+         <div opacity=50%>
+<ol>
+ <li>Introduction</li>
+  <li>Problem Statement</li>
+  <li>Objectives</li>
+  <li>Study Area</li>
+  <li>Methodology</li>
+  <li>Expected Results</li>
+  <li>References</li>
+</ol>>
+      </div>
+      
+    </div>
+    <div class="card">
+<h3>drought estimation by the ocean wind and ocean currents,Kwale County</h3>
+      <div class="fakeimg" style="height:70px ><img src="news.jpg" opacity=".40"></div>
+     <div class="desc">Drought considered to be one of the major natural hazards causing destructive impact on the environment as well as the economy of countries throughout the world(WMO & GWD, 2016). In Kenya it has been termed as natural disaster after floods. Its almost impossible to avoid drought although drought preparedness can be developed and drought impact can be managed, this however will depend on how well drought are defined and drought characteristics quantified.Remote sensing data in combination with other climate and weather data can play an important role in estimating the influence of ocean winds and current to their environs and the relationship between their behavior and drought experienced at coastal part more specifically at Kwale County.The main aim of this study is to show effect and influence of ocean waves, wind, temperatures and current to their surroundings and their contribution towards drought. The influence of hot air and cold air from ocean and other ocean variations towards drought estimation</div>>
+    </div>
+
+    <div class="rightcolumn" style="right: up">
+    <div class="card">
+      <h2>News</h2>
+      <p>Take a walk we Rose as she introduces you to her coding journey,website creating and  through the Gis experince with the necessary information on its application. Stay tuned for more updates on the latest and relevant topics including Big Data, Survey and Mapping and Web Mapping Applicatons</p>
+   
+    </div>
+
+  </div>
+  
+</div>
+</body>
+</html>
